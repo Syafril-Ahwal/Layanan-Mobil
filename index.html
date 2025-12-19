@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tugas Pemrograman WEB 1</title>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__bar">
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home" data-lang="nav_home">Beranda</a></li>
+                <li><a href="#about" data-lang="nav_about">Tentang</a></li>
+                <li><a href="#service" data-lang="nav_service">Layanan</a></li>
+                <li><a href="#price" data-lang="nav_price">Harga</a></li>
+                <li><a href="#client" data-lang="nav_client">Klien</a></li>
+                <a href="#contact" class="btn" data-lang="nav_contact">
+                    Hubungi Kami
+                </a>
+            </ul>
+
+            <div class="lang-switcher">
+                <select id="language" onchange="changeLanguage(this)">
+                    <option value="id">🇮🇩</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Header content -->
+        <div class="section__container header__container" id="home">
+            <div class="header__content">
+                <h1 data-lang="header_title">Kami Berkualitas & Profesional</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= BANNER ================= -->
+    <section class="banner__container">
+        <div class="banner__card">
+            <h4 data-lang="banner_h4">Kepuasan Dijamin atau Uang Kembali.</h4>
+        </div>
+        <div class="banner__card">
+            <h4 data-lang="banner2_h4">Merawat Mobil Anda Seperti yang Anda Inginkan.</h4>
+        </div>
+        <div class="banner__image">
+            <img src="assets/banner.jpg" alt="banner" />
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section__container experience__container" id="about">
+        <div class="experience__image">
+            <img src="assets/experience.jpg" alt="experience" />
+        </div>
+
+        <div class="experience__content">
+            <p class="section__subheader" data-lang="about_sub">SIAPA KAMI</p>
+            <h2 class="section__header" data-lang="about_title">Kami Memiliki 25 Tahun Pengalaman</h2>
+
+            <p class="section__description" data-lang="about_desc">
+                Dengan pengalaman lebih dari 25 tahun...
+            </p>
+
+            <p class="section__description" data-lang="about2_desc">
+                Dengan warisan yang kaya selama 25 tahun, komitmen kami terhadap keunggulan dalam
+                pelayanan perawatan mobil tetap kokoh. Tim berpengalaman kami membawa
+                keahlian yang luas untuk memastikan kendaraan Anda mendapatkan perawatan terbaik.
+            </p>
+
+            <a href="tentang.html" class="btn" data-lang="button_about">
+                Selengkapnya
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SERVICE ================= -->
+    <section class="service" id="service">
+        <div class="section__container service__container">
+            <p class="section__subheader" data-lang="service_sub">MENGAPA KAMI</p>
+            <h2 class="section__header" data-lang="service_title">Layanan Mobil Terbaik</h2>
+
+            <p class="section__description" data-lang="service_desc">
+                Percayakan kepada kami untuk menjaga mobil anda tetap prima.
+            </p>
+
+            <div class="service__grid">
+                <div class="service__card">
+                    <a href="service1.html"><img src="assets/service-1.jpg" alt="service" /></a>
+                    <h4 data-lang="srv1_title">Pelurusan Ban</h4>
+                    <p data-lang="srv1_desc">
+                        Mengemudi lebih mulus dan ban lebih awet.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <a href="service2.html"><img src="assets/service-2.jpg" alt="service" /></a>
+                    <h4 data-lang="srv2_title">Sistem Kelistrikan</h4>
+                    <p data-lang="srv2_desc">
+                        Perbaikan sistem kelistrikan mobil.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <a href="service3.html"><img src="assets/service-3.jpg" alt="service" /></a>
+                    <h4 data-lang="srv3_title">Servis Sistem</h4>
+                    <p data-lang="srv3_desc">
+                        Pengecekan detail untuk kondisi optimal.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <a href="service4.html"><img src="assets/service-4.jpg" alt="service" /></a>
+                    <h4 data-lang="srv4_title">Diagnostik Mesin</h4>
+                    <p data-lang="srv4_desc">
+                        Analisa kondisi mesin Anda secara profesional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CUSTOMISATION ================= -->
+    <section class="customisation">
+        <video autoplay muted loop class="customisation__video">
+            <source src="assets/WhatsApp Video 2025-12-16 at 21.03.32.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="customisation__overlay"></div>
+
+        <div class="section__container customisation__container">
+            <p class="section__subheader" data-lang="cts1_subheader">PENYESUAIAN KUSTOM KAMI</p>
+            <h2 class="section__header" data-lang="cts2_header">Pelayanan Mobil yang Dilengkapi dengan Kualitas Kerja
+                yang Unggul</h2>
+            <p class="section__description" data-lang="cts3_deskripsi">
+                Tim kami yang berdedikasi dan terdiri dari teknisi-teknisi berpengalaman menyediakan layanan berkualitas
+                tinggi.
+            </p>
+
+            <div class="customisation__grid">
+                <div class="customisation__card">
+                    <h4>65</h4>
+                    <p data-lang="grid1_desc">Total Projek</p>
+                </div>
+                <div class="customisation__card">
+                    <h4>165</h4>
+                    <p data-lang="grid2_desc">Transparansi</p>
+                </div>
+                <div class="customisation__card">
+                    <h4>463</h4>
+                    <p data-lang="grid3_desc">Projek Selesai</p>
+                </div>
+                <div class="customisation__card">
+                    <h4>5063</h4>
+                    <p data-lang="grid4_desc">Penghargaan Didapatkan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRICE ================= -->
+    <section class="section__container price__container" id="price">
+        <p class="section__subheader" data-lang="price_sub">PAKET TERBAIK</p>
+        <h2 class="section__header" data-lang="price_title">Paket Harga Kami</h2>
+        <p class="section__description" data-lang="price_desc">
+            Kami menawarkan berbagai pilihan harga yang terjangkau dan fleksibel.
+        </p>
+
+        <div class="price__grid">
+            <!-- BASIC -->
+            <div class="price__card">
+                <h4 data-lang="price_basic">Paket Basic</h4>
+                <h3>Rp 250.000</h3>
+                <ul>
+                    <li data-lang="price_basic_1">Cuci Mobil</li>
+                    <li data-lang="price_basic_2">Cek Oli</li>
+                    <li data-lang="price_basic_3">Cek Tekanan Ban</li>
+                </ul>
+            </div>
+
+            <!-- STANDARD (RECOMMENDED) -->
+            <div class="price__card price__card--active">
+                <span class="price__badge" data-lang="price_recommend">Rekomendasi</span>
+                <h4 data-lang="price_standard">Paket Standard</h4>
+                <h3>Rp 500.000</h3>
+                <ul>
+                    <li data-lang="price_standard_1">Cuci & Wax</li>
+                    <li data-lang="price_standard_2">Ganti Oli</li>
+                    <li data-lang="price_standard_3">Tune Up Ringan</li>
+                    <li data-lang="price_standard_4">Cek Rem</li>
+                </ul>
+            </div>
+
+            <!-- PREMIUM -->
+            <div class="price__card">
+                <h4 data-lang="price_premium">Paket Premium</h4>
+                <h3>Rp 850.000</h3>
+                <ul>
+                    <li data-lang="price_premium_1">Full Service</li>
+                    <li data-lang="price_premium_2">Detailing Interior</li>
+                    <li data-lang="price_premium_3">Diagnostik Mesin</li>
+                    <li data-lang="price_premium_4">Garansi Servis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <div class="section__container contact__container">
+            <div class="contact__content">
+                <p class="section__subheader" data-lang="contact_sub">HUBUNGI KAMI</p>
+                <h2 class="section__header" data-lang="contact_title">Bayangkan Mobil Anda Kembali Baru</h2>
+                <p class="section__description" data-lang="contact_desc">
+                    Rasakan mobil Anda kembali seperti baru.
+                </p>
+
+                <div class="contact__btns">
+                    <a href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"
+                        class="btn" data-lang="contact_btn" target="_blank" rel="noopener">
+                        Hubungi Kami
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="section__container testimonial__container" id="client">
+        <p class="section__subheader" data-lang="ttm1_subheader">ULASAN PELANGGAN</p>
+        <h2 class="section__header" data-lang="ttm2_header">
+            100% Direkomendasikan oleh Pelanggan
+        </h2>
+
+        <div class="swiper testimonial__swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide testimonial__card">
+                    <div class="testimonial__profile">
+                        <img src="assets/foto1.png" alt="client">
+                        <div>
+                            <h4 data-lang="ttm_name1">Andi Pratama</h4>
+                            <span data-lang="ttm_role1">Pelanggan</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonial__text" data-lang="ttm_text1">
+                        Pelayanan sangat profesional dan cepat.
+                    </p>
+
+                    <div class="testimonial__rating">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide testimonial__card">
+                    <div class="testimonial__profile">
+                        <img src="assets/foto3.png" alt="client">
+                        <div>
+                            <h4 data-lang="ttm_name2">Siti Rahma</h4>
+                            <span data-lang="ttm_role2">Pelanggan</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonial__text" data-lang="ttm_text2">
+                        Teknisi ramah dan hasil servis memuaskan.
+                    </p>
+
+                    <div class="testimonial__rating">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide testimonial__card">
+                    <div class="testimonial__profile">
+                        <img src="assets/foto2.png" alt="client">
+                        <div>
+                            <h4 data-lang="ttm_name3">Budi Santoso</h4>
+                            <span data-lang="ttm_role3">Pelanggan</span>
+                        </div>
+                    </div>
+
+                    <p class="testimonial__text" data-lang="ttm_text3">
+                        Sangat puas, pasti akan kembali lagi.
+                    </p>
+
+                    <div class="testimonial__rating">★★★★★</div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- ================= KRITIK & SARAN ================= -->
+    <section class="section__container feedback__container" id="feedback">
+        <p class="section__subheader" data-lang="fb_sub">KRITIK & SARAN</p>
+        <h2 class="section__header" data-lang="fb_title">Bantu Kami Menjadi Lebih Baik</h2>
+        <p class="section__description" data-lang="fb_desc">
+            Silakan isi kuesioner singkat berikut untuk memberikan kritik dan saran Anda.
+        </p>
+
+        <form class="feedback__form" id="feedbackForm">
+            <div class="form__group">
+                <label for="name" data-lang="fb_name_label">Nama</label>
+                <input type="text" id="name" data-lang-placeholder="fb_name_ph" placeholder="Masukkan nama Anda"
+                    required />
+            </div>
+
+            <div class="form__group">
+                <label for="email" data-lang="fb_email_label">Type Mobil yang Diservice</label>
+                <input type="text" id="email" data-lang-placeholder="fb_email_ph" placeholder="Masukkan email Anda"
+                    required />
+            </div>
+
+            <div class="form__group">
+                <label for="rating" data-lang="fb_rating_label">Penilaian Layanan</label>
+                <select id="rating" required>
+                    <option value="" data-lang="fb_rating_opt0">-- Pilih Penilaian --</option>
+                    <option value="5" data-lang="fb_rating_opt5">Sangat Puas</option>
+                    <option value="4" data-lang="fb_rating_opt4">Puas</option>
+                    <option value="3" data-lang="fb_rating_opt3">Cukup</option>
+                    <option value="2" data-lang="fb_rating_opt2">Kurang Puas</option>
+                    <option value="1" data-lang="fb_rating_opt1">Tidak Puas</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="message" data-lang="fb_msg_label">Kritik & Saran</label>
+                <textarea id="message" rows="4" data-lang-placeholder="fb_msg_ph"
+                    placeholder="Tulis kritik dan saran Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" data-lang="fb_submit">
+                Kirim
+            </button>
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <p class="section__description" data-lang="footer_about">
+                    Dengan pengalaman 25 tahun, kami selalu menjaga kualitas.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/syxxfrl?igsh=MWdrcndxdm9jcDNm&utm_source=ig_contact_invite"><i
+                                class="ri-instagram-line"></i></a></li>
+                    <li><a
+                            href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"><i
+                                class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_header">Layanan Kami</h4>
+                <ul class="footer__links">
+                    <li data-lang="footer_link1">Mekanik berpengalaman</li>
+                    <li data-lang="footer_link2">Pemeliharaan Rutin</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_link3">Informasi Kontak</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p data-lang="footer_link4">Telepon: <span>+62 813-8707-0518</span></p>
+                    </li>
+                    <li>
+                        <p data-lang="footer_link5">Email: <span>TugasWeb1@gmail.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2025 Syafril Ahwal. All rights reserved.
+    </div>
+
+    <!-- JAVASCRIPT (HARUS DIBAWAH SEMUA) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kelistrikan</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" data-lang="nav_home">Beranda</a></li>
+                <li><a href="#wheel-alignment" data-lang="nav_about">Service</a></li>
+                <a href="#contact" class="btn" data-lang="nav_contact">
+                    Hubungi Kami
+                </a>
+            </ul>
+
+            <div class="lang-switcher">
+                <select id="language" onchange="changeLanguage(this)">
+                    <option value="id">🇮🇩</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Header content -->
+        <div class="section__container header__container" id="home">
+            <div class="header__content">
+                <h1 data-lang="header_title">Kami Berkualitas & Profesional</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section service-detail" id="electrical-system">
+        <div class="section__container service-detail__container">
+            <div class="service__card">
+                <img src="assets/service-2.jpg" alt="service" />
+            </div>
+            <!-- ===== Header Layanan ===== -->
+            <header class="service-detail__header">
+                <h2 class="service-detail__title" data-lang="es_title">
+                    Sistem Kelistrikan Mobil
+                </h2>
+                <p class="service-detail__intro" data-lang="es_intro">
+                    Sistem kelistrikan mobil merupakan komponen vital yang berfungsi mengatur dan mendukung
+                    hampir seluruh fitur kendaraan, mulai dari proses starter, pengapian, penerangan, hingga
+                    sistem keamanan dan kenyamanan.
+                </p>
+            </header>
+
+            <!-- ===== Deskripsi Umum ===== -->
+            <div class="service-detail__description">
+                <p data-lang="es_desc_1">
+                    Gangguan kecil pada sistem kelistrikan dapat menyebabkan mobil sulit dihidupkan, performa
+                    menurun, bahkan mogok di jalan. Oleh karena itu, pemeriksaan dan perbaikan sistem kelistrikan
+                    perlu dilakukan secara menyeluruh dan profesional.
+                </p>
+
+                <p data-lang="es_desc_2">
+                    Layanan perbaikan sistem kelistrikan mobil meliputi pemeriksaan dan penanganan berbagai
+                    komponen seperti aki, alternator, starter, kabel, sekring, relay, sensor, hingga sistem
+                    elektronik modern.
+                </p>
+            </div>
+
+            <!-- ===== Ruang Lingkup Layanan ===== -->
+            <div class="service-detail__scope">
+                <h3 class="service-detail__subtitle" data-lang="es_scope_title">
+                    Ruang Lingkup Layanan
+                </h3>
+
+                <div class="service-detail__grid">
+
+                    <div class="service-detail__card">
+                        <h4 data-lang="es_scope_1_title">Pemeriksaan Aki & Sistem Pengisian</h4>
+                        <p data-lang="es_scope_1_desc">
+                            Mengecek kondisi aki, tegangan, arus listrik, serta kinerja alternator untuk memastikan
+                            daya listrik stabil dan pengisian berjalan optimal.
+                        </p>
+                    </div>
+
+                    <div class="service-detail__card">
+                        <h4 data-lang="es_scope_2_title">Perbaikan Starter & Pengapian</h4>
+                        <p data-lang="es_scope_2_desc">
+                            Menangani starter yang lemah atau tidak berfungsi serta memastikan sistem pengapian
+                            bekerja normal agar mesin mudah dihidupkan.
+                        </p>
+                    </div>
+
+                    <div class="service-detail__card">
+                        <h4 data-lang="es_scope_3_title">Diagnosa Kabel & Jalur Kelistrikan</h4>
+                        <p data-lang="es_scope_3_desc">
+                            Menelusuri kabel putus, aus, korsleting, atau sambungan longgar yang dapat memicu
+                            gangguan
+                            listrik dan kerusakan lanjutan.
+                        </p>
+                    </div>
+
+                    <div class="service-detail__card">
+                        <h4 data-lang="es_scope_4_title">Pengecekan Lampu & Aksesori</h4>
+                        <p data-lang="es_scope_4_desc">
+                            Memperbaiki lampu utama, lampu rem, sein, klakson, power window, wiper, audio, dan
+                            aksesori listrik lainnya agar berfungsi optimal.
+                        </p>
+                    </div>
+
+                    <div class="service-detail__card">
+                        <h4 data-lang="es_scope_5_title">Diagnosa Sistem Elektronik & Sensor</h4>
+                        <p data-lang="es_scope_5_desc">
+                            Menggunakan alat diagnostik modern untuk membaca kesalahan pada ECU, sensor, dan modul
+                            elektronik sehingga perbaikan lebih akurat.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ===== Manfaat Layanan ===== -->
+            <div class="service-detail__benefits">
+                <h3 class="service-detail__subtitle" data-lang="es_benefits_title">
+                    Manfaat Layanan Sistem Kelistrikan
+                </h3>
+
+                <ul class="benefits__list">
+                    <li data-lang="es_benefit_1">Mobil lebih mudah dihidupkan dan tidak mudah mogok</li>
+                    <li data-lang="es_benefit_2">Kinerja mesin dan fitur elektronik tetap optimal</li>
+                    <li data-lang="es_benefit_3">Mencegah kerusakan lanjutan akibat korsleting listrik</li>
+                    <li data-lang="es_benefit_4">Meningkatkan kenyamanan dan keselamatan berkendara</li>
+                </ul>
+            </div>
+
+            <!-- ===== Penutup ===== -->
+            <div class="service-detail__closing">
+                <p data-lang="es_closing">
+                    Dengan perawatan dan perbaikan sistem kelistrikan yang tepat, mobil akan berfungsi lebih
+                    stabil, aman, dan andal dalam berbagai kondisi penggunaan, baik untuk perjalanan harian
+                    maupun jarak jauh.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <p class="section__description" data-lang="footer_about">
+                    Dengan pengalaman 25 tahun, kami selalu menjaga kualitas.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/syxxfrl?igsh=MWdrcndxdm9jcDNm&utm_source=ig_contact_invite"><i
+                                class="ri-instagram-line"></i></a></li>
+                    <li><a
+                            href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"><i
+                                class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_header">Layanan Kami</h4>
+                <ul class="footer__links">
+                    <li data-lang="footer_link1">Mekanik berpengalaman</li>
+                    <li data-lang="footer_link2">Pemeliharaan Rutin</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_link3">Informasi Kontak</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p data-lang="footer_link4">Telepon: <span>+62 813-8707-0518</span></p>
+                    </li>
+                    <li>
+                        <p data-lang="footer_link5">Email: <span>TugasWeb1@gmail.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2025 Syafril Ahwal. All rights reserved.
+    </div>
+
+    <!-- JAVASCRIPT (HARUS DIBAWAH SEMUA) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

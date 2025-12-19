@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelurusan Ban</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" data-lang="nav_home">Beranda</a></li>
+                <li><a href="#wheel-alignment" data-lang="nav_about">Service</a></li>
+                <a href="#contact" class="btn" data-lang="nav_contact">
+                    Hubungi Kami
+                </a>
+            </ul>
+
+            <div class="lang-switcher">
+                <select id="language" onchange="changeLanguage(this)">
+                    <option value="id">🇮🇩</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Header content -->
+        <div class="section__container header__container" id="home">
+            <div class="header__content">
+                <h1 data-lang="header_title">Kami Berkualitas & Profesional</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section service-detail" id="wheel-alignment">
+        <div class="section__container service-detail__container">
+            <div class="service__card">
+                <img src="assets/service-1.jpg" alt="service" />
+            </div>
+
+            <!-- Judul Layanan -->
+            <div class="service-detail__header">
+                <h2 data-lang="wa_title">Pelurusan Ban (Wheel Alignment)</h2>
+                <p data-lang="wa_intro">
+                    Pelurusan ban adalah proses penyesuaian sudut roda mobil agar sesuai dengan spesifikasi pabrik.
+                    Tujuannya adalah memastikan ban menapak sempurna di jalan saat mobil bergerak lurus.
+                </p>
+            </div>
+
+            <!-- Manfaat Layanan -->
+            <div class="service-detail__benefits">
+                <h3 data-lang="wa_benefits_title">Manfaat Pelurusan Ban:</h3>
+                <ul class="benefits__list">
+                    <li data-lang="wa_benefit1"><strong>Mengemudi Lebih Mulus</strong> – Mobil akan lebih stabil, tidak
+                        terasa miring atau “tarik ke kiri/kanan” saat dikendarai.</li>
+                    <li data-lang="wa_benefit2"><strong>Ban Lebih Awet</strong> – Karena ban menapak rata, keausan ban
+                        menjadi lebih merata sehingga umur pakainya lebih panjang.</li>
+                    <li data-lang="wa_benefit3"><strong>Hemat Bahan Bakar</strong> – Roda yang lurus membuat mesin
+                        bekerja lebih efisien, sehingga konsumsi bahan bakar bisa lebih hemat.</li>
+                    <li data-lang="wa_benefit4"><strong>Keselamatan Meningkat</strong> – Mobil yang stabil lebih mudah
+                        dikendalikan, terutama saat menikung atau rem mendadak.</li>
+                </ul>
+            </div>
+
+            <!-- Proses Layanan -->
+            <div class="service-detail__process">
+                <h3 data-lang="wa_process_title">Proses Pelurusan:</h3>
+                <ol class="process__list">
+                    <li data-lang="wa_process1">Mekanik memeriksa sudut roda depan dan belakang.</li>
+                    <li data-lang="wa_process2">Disesuaikan dengan alat khusus sehingga roda lurus ke arah yang benar.
+                    </li>
+                    <li data-lang="wa_process3">Mobil diuji di jalan atau mesin simulasi untuk memastikan setelan tepat.
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <p class="section__description" data-lang="footer_about">
+                    Dengan pengalaman 25 tahun, kami selalu menjaga kualitas.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/syxxfrl?igsh=MWdrcndxdm9jcDNm&utm_source=ig_contact_invite"><i
+                                class="ri-instagram-line"></i></a></li>
+                    <li><a
+                            href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"><i
+                                class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_header">Layanan Kami</h4>
+                <ul class="footer__links">
+                    <li data-lang="footer_link1">Mekanik berpengalaman</li>
+                    <li data-lang="footer_link2">Pemeliharaan Rutin</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_link3">Informasi Kontak</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p data-lang="footer_link4">Telepon: <span>+62 813-8707-0518</span></p>
+                    </li>
+                    <li>
+                        <p data-lang="footer_link5">Email: <span>TugasWeb1@gmail.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2025 Syafril Ahwal. All rights reserved.
+    </div>
+
+    <!-- JAVASCRIPT (HARUS DIBAWAH SEMUA) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

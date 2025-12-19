@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostik Mesin</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" data-lang="nav_home">Beranda</a></li>
+                <li><a href="#wheel-alignment" data-lang="nav_about">Service</a></li>
+                <a href="#contact" class="btn" data-lang="nav_contact">
+                    Hubungi Kami
+                </a>
+            </ul>
+
+            <div class="lang-switcher">
+                <select id="language" onchange="changeLanguage(this)">
+                    <option value="id">🇮🇩</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Header content -->
+        <div class="section__container header__container" id="home">
+            <div class="header__content">
+                <h1 data-lang="header_title">Kami Berkualitas & Profesional</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="engine-diagnostic" data-lang="id">
+        <div class="engine-diagnostic__container">
+
+            <!-- Header -->
+            <header class="engine-diagnostic__header">
+                <h2 class="engine-diagnostic__title" data-lang="diagnostic_title">
+                    Diagnostik Mesin
+                </h2>
+                <p class="engine-diagnostic__intro" data-lang="diagnostic_intro">
+                    Diagnostik mesin merupakan layanan analisa mendalam untuk mengetahui kondisi
+                    sebenarnya dari mesin kendaraan tanpa harus langsung membongkar komponen.
+                </p>
+            </header>
+
+            <!-- Description -->
+            <div class="engine-diagnostic__description">
+                <p data-lang="diagnostic_desc_1">
+                    Proses ini bertujuan mengidentifikasi sumber masalah secara akurat, baik yang
+                    sudah terasa oleh pengemudi maupun gangguan tersembunyi yang belum menimbulkan
+                    gejala serius.
+                </p>
+
+                <p data-lang="diagnostic_desc_2">
+                    Mesin diperiksa dari berbagai aspek, mulai dari performa, respon kerja,
+                    hingga data elektronik yang dihasilkan oleh sistem kontrol mesin dengan
+                    peralatan diagnostik modern.
+                </p>
+            </div>
+
+            <!-- Process -->
+            <div class="engine-diagnostic__process">
+                <h3 class="engine-diagnostic__subtitle" data-lang="diagnostic_process">
+                    Proses Analisa Diagnostik
+                </h3>
+
+                <div class="engine-diagnostic__list">
+
+                    <article class="engine-diagnostic__item">
+                        <h4 data-lang="process_1_title">Pembacaan Data Mesin</h4>
+                        <p data-lang="process_1_desc">
+                            Sistem komputer kendaraan dipindai untuk membaca kode kesalahan,
+                            parameter kerja mesin, serta data sensor yang mempengaruhi efisiensi
+                            pembakaran.
+                        </p>
+                    </article>
+
+                    <article class="engine-diagnostic__item">
+                        <h4 data-lang="process_2_title">Evaluasi Performa Mesin</h4>
+                        <p data-lang="process_2_desc">
+                            Analisa dilakukan berdasarkan suara mesin, getaran, respon akselerasi,
+                            konsumsi bahan bakar, serta kestabilan putaran mesin.
+                        </p>
+                    </article>
+
+                    <article class="engine-diagnostic__item">
+                        <h4 data-lang="process_3_title">Pemeriksaan Sistem Pendukung</h4>
+                        <p data-lang="process_3_desc">
+                            Meliputi sistem bahan bakar, udara, pengapian, pendinginan, dan emisi
+                            agar seluruh sistem bekerja selaras.
+                        </p>
+                    </article>
+
+                    <article class="engine-diagnostic__item">
+                        <h4 data-lang="process_4_title">Identifikasi Potensi Kerusakan</h4>
+                        <p data-lang="process_4_desc">
+                            Mendeteksi komponen yang mulai melemah sebelum menimbulkan kerusakan
+                            serius di kemudian hari.
+                        </p>
+                    </article>
+
+                    <article class="engine-diagnostic__item">
+                        <h4 data-lang="process_5_title">Rekomendasi Teknis Profesional</h4>
+                        <p data-lang="process_5_desc">
+                            Hasil diagnostik disajikan dalam laporan kondisi mesin beserta saran
+                            perawatan atau perbaikan sesuai tingkat urgensi.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="engine-diagnostic__benefits">
+                <h3 class="engine-diagnostic__subtitle" data-lang="diagnostic_benefits">
+                    Nilai Tambah Layanan Diagnostik Mesin
+                </h3>
+
+                <ul class="engine-diagnostic__benefits-list">
+                    <li data-lang="benefit_1">
+                        Menghindari perbaikan yang tidak perlu dan pembongkaran berlebihan
+                    </li>
+                    <li data-lang="benefit_2">
+                        Menghemat waktu dan biaya karena sumber masalah teridentifikasi jelas
+                    </li>
+                    <li data-lang="benefit_3">
+                        Menjaga performa mesin tetap optimal dan stabil
+                    </li>
+                    <li data-lang="benefit_4">
+                        Membantu pemilik kendaraan memahami kondisi mesin secara objektif
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Closing -->
+            <div class="engine-diagnostic__closing">
+                <p data-lang="diagnostic_closing">
+                    Dengan layanan diagnostik mesin yang dilakukan secara profesional, pemilik
+                    kendaraan memperoleh gambaran nyata mengenai kesehatan mesin sehingga
+                    keputusan perawatan dapat dilakukan secara tepat dan terencana.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <p class="section__description" data-lang="footer_about">
+                    Dengan pengalaman 25 tahun, kami selalu menjaga kualitas.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/syxxfrl?igsh=MWdrcndxdm9jcDNm&utm_source=ig_contact_invite"><i
+                                class="ri-instagram-line"></i></a></li>
+                    <li><a
+                            href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"><i
+                                class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_header">Layanan Kami</h4>
+                <ul class="footer__links">
+                    <li data-lang="footer_link1">Mekanik berpengalaman</li>
+                    <li data-lang="footer_link2">Pemeliharaan Rutin</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_link3">Informasi Kontak</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p data-lang="footer_link4">Telepon: <span>+62 813-8707-0518</span></p>
+                    </li>
+                    <li>
+                        <p data-lang="footer_link5">Email: <span>TugasWeb1@gmail.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2025 Syafril Ahwal. All rights reserved.
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

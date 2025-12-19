@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servis Sistem</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+
+            </div>
+
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html" data-lang="nav_home">Beranda</a></li>
+                <li><a href="#wheel-alignment" data-lang="nav_about">Service</a></li>
+                <a href="#contact" class="btn" data-lang="nav_contact">
+                    Hubungi Kami
+                </a>
+            </ul>
+
+            <div class="lang-switcher">
+                <select id="language" onchange="changeLanguage(this)">
+                    <option value="id">🇮🇩</option>
+                    <option value="en">🇺🇸</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Header content -->
+        <div class="section__container header__container" id="home">
+            <div class="header__content">
+                <h1 data-lang="header_title">Kami Berkualitas & Profesional</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section system-service" id="car-system-service-detail">
+        <div class="section__container system-service__container">
+            <div class="service__card">
+                <img src="assets/service-3.jpg" alt="service" />
+            </div>
+
+            <!-- ===== Header Layanan ===== -->
+            <header class="system-service__header">
+                <h2 class="system-service__title" data-lang="css_title">
+                    Servis Sistem Mobil
+                </h2>
+                <p class="system-service__intro" data-lang="css_intro">
+                    Servis sistem mobil adalah layanan perawatan menyeluruh yang bertujuan untuk memastikan
+                    seluruh sistem utama kendaraan bekerja secara optimal, aman, dan sesuai standar pabrikan.
+                </p>
+            </header>
+
+            <!-- ===== Deskripsi Umum ===== -->
+            <div class="system-service__description">
+                <p data-lang="css_desc_1">
+                    Servis ini tidak hanya berfokus pada satu komponen tertentu, tetapi mencakup pemeriksaan
+                    detail berbagai sistem penting yang saling terhubung dalam mendukung performa kendaraan
+                    secara keseluruhan.
+                </p>
+
+                <p data-lang="css_desc_2">
+                    Melalui pengecekan yang teliti dan terstruktur, potensi kerusakan dapat dideteksi sejak dini
+                    sehingga dapat mencegah masalah yang lebih besar, biaya perbaikan yang tinggi, serta risiko
+                    gangguan saat berkendara.
+                </p>
+            </div>
+
+            <!-- ===== Ruang Lingkup ===== -->
+            <div class="system-service__scope">
+                <h3 class="system-service__subtitle" data-lang="css_scope_title">
+                    Ruang Lingkup Pengecekan Servis Sistem
+                </h3>
+
+                <div class="system-service__grid">
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_1_title">Sistem Mesin & Performa</h4>
+                        <p data-lang="css_scope_1_desc">
+                            Pemeriksaan suara mesin, getaran, kebocoran oli, dan kinerja pembakaran untuk memastikan
+                            mesin bekerja halus, responsif, dan efisien.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_2_title">Sistem Pelumasan & Cairan</h4>
+                        <p data-lang="css_scope_2_desc">
+                            Pengecekan oli mesin, oli transmisi, minyak rem, air radiator, dan cairan lainnya agar
+                            volumenya cukup dan kualitasnya masih layak pakai.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_3_title">Sistem Pendingin</h4>
+                        <p data-lang="css_scope_3_desc">
+                            Memastikan radiator, kipas pendingin, selang, dan thermostat bekerja dengan baik agar
+                            suhu mesin tetap stabil dan tidak overheat.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_4_title">Sistem Rem & Keselamatan</h4>
+                        <p data-lang="css_scope_4_desc">
+                            Pemeriksaan kampas rem, cakram, minyak rem, dan respon pengereman untuk menjamin
+                            keselamatan dan kendali kendaraan.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_5_title">Sistem Kelistrikan & Elektronik</h4>
+                        <p data-lang="css_scope_5_desc">
+                            Mengecek aki, sistem pengisian, lampu, sensor, dan modul elektronik agar seluruh fitur
+                            kendaraan berfungsi normal.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_6_title">Sistem Suspensi & Kemudi</h4>
+                        <p data-lang="css_scope_6_desc">
+                            Pemeriksaan shock absorber, ball joint, tie rod, dan sistem kemudi untuk menjaga
+                            kestabilan dan kenyamanan berkendara.
+                        </p>
+                    </div>
+
+                    <div class="system-service__card">
+                        <h4 data-lang="css_scope_7_title">Sistem Ban & Kaki-Kaki</h4>
+                        <p data-lang="css_scope_7_desc">
+                            Mengecek kondisi ban, tekanan udara, keausan, serta keseimbangan roda demi keamanan dan
+                            kenyamanan berkendara.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ===== Manfaat ===== -->
+            <div class="system-service__benefits">
+                <h3 class="system-service__subtitle" data-lang="css_benefits_title">
+                    Manfaat Servis Sistem Mobil
+                </h3>
+
+                <ul class="system-service__benefits-list">
+                    <li data-lang="css_benefit_1">Menjaga kondisi mobil tetap prima dan siap digunakan</li>
+                    <li data-lang="css_benefit_2">Mendeteksi kerusakan sejak dini sebelum menjadi masalah serius</li>
+                    <li data-lang="css_benefit_3">Meningkatkan umur pakai komponen kendaraan</li>
+                    <li data-lang="css_benefit_4">Memberikan kenyamanan dan rasa aman saat berkendara</li>
+                    <li data-lang="css_benefit_5">Membantu menjaga nilai jual mobil tetap tinggi</li>
+                </ul>
+            </div>
+
+            <!-- ===== Penutup ===== -->
+            <div class="system-service__closing">
+                <p data-lang="css_closing">
+                    Servis sistem mobil sangat dianjurkan dilakukan secara berkala, terutama sebelum perjalanan
+                    jauh atau setelah mobil menempuh jarak tertentu, agar kendaraan selalu berada dalam kondisi
+                    optimal dan andal di berbagai situasi.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <p class="section__description" data-lang="footer_about">
+                    Dengan pengalaman 25 tahun, kami selalu menjaga kualitas.
+                </p>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/syxxfrl?igsh=MWdrcndxdm9jcDNm&utm_source=ig_contact_invite"><i
+                                class="ri-instagram-line"></i></a></li>
+                    <li><a
+                            href="https://wa.me/6281387070518?text=Halo%20saya%20ingin%20menghubungi%20melalui%20website"><i
+                                class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_header">Layanan Kami</h4>
+                <ul class="footer__links">
+                    <li data-lang="footer_link1">Mekanik berpengalaman</li>
+                    <li data-lang="footer_link2">Pemeliharaan Rutin</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 data-lang="footer_link3">Informasi Kontak</h4>
+                <ul class="footer__links">
+                    <li>
+                        <p data-lang="footer_link4">Telepon: <span>+62 813-8707-0518</span></p>
+                    </li>
+                    <li>
+                        <p data-lang="footer_link5">Email: <span>TugasWeb1@gmail.com</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2025 Syafril Ahwal. All rights reserved.
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
